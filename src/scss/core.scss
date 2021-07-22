@@ -1,0 +1,18 @@
+
+html, body {
+    height: 100%;
+    font-family: "Roboto";
+    font-size: 12px;
+}
+.container {
+    height: 100%;
+    @include min-max (320px, 100%, 0);
+}
+
+.wrap {
+    @include min-max (320px, 1170px, 15px);
+}
+
+p {
+    color: $black;
+}

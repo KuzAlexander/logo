@@ -1,0 +1,62 @@
+@include font("Play", "Play-Bold", "700", "normal");
+@include font("Play", "Play-Regular", "400", "normal");
+@include font("Roboto", "Roboto-Black", "900", "normal");
+@include font("Roboto", "Roboto-Medium", "500", "normal");
+@include font("Roboto", "Roboto-Light", "300", "normal");
+@include font("Roboto", "Roboto-Regular", "400", "normal");
+@include font("Roboto", "Roboto-Bold", "700", "normal");
+@include font("UniSans", "Uni Sans", "400", "normal");
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?v4z5fj');
+  src:  url('../fonts/icomoon.woff?v4z5fj') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?nfw77q');
+  src:  url('../fonts/icomoon.woff?nfw77q') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-close:before {
+  content: "\e905";
+}
+.icon-grid:before {
+  content: "\e903";
+}
+.icon-list:before {
+  content: "\e904";
+}
+.icon-arrow:before {
+  content: "\e902";
+}
+.icon-arrow-left:before {
+  content: "\e900";
+}
+.icon-arrow-right:before {
+  content: "\e901";
+}
+
+
