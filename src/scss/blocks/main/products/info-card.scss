@@ -1,0 +1,90 @@
+.info-card {
+
+		&__title {
+            display: flex;
+            @media(max-width: 450px){
+                justify-content: center;
+            }  
+		}
+
+		&__button {
+            align-self: center;
+            display: block;
+            padding: 12px 30px; 
+            text-decoration: none; 
+            @media(max-width: 450px){
+                padding: 12px 20px;
+            }                          
+            p {
+                font-size: 14px;
+                line-height: 25px;
+                color: #72c9d4;
+                font-weight: 900;
+                text-transform: uppercase;
+                border-bottom: 1px dashed #72c9d4;
+            }            
+		}
+        &__active {
+            background-color: #72c9d4;
+            p {
+                color: #fff;
+                padding: 0;
+                border: none;
+            }
+            
+        }
+
+		&__description {
+            padding: 35px 30px;
+            background-color: #fafafa;
+            font-size: 14px;
+            line-height: 22px;
+            color: #666666;
+            font-weight: 300;  
+            @media(max-width: 700px){
+                padding: 15px;
+            }            
+            p {
+                margin-top: 30px;
+                &:first-child {
+                    margin: 0;
+                }                
+            } 
+            span {
+                display: block;
+            }
+
+		}
+
+		&__parameter {
+            display: none;
+            padding: 20px 0;            
+		}
+
+		&__wrap {
+            display: flex;
+            padding: 15px 0 10px 0;
+            border-bottom: 1px solid #e2e2e2;
+                
+            p {
+                flex-basis: 50%;
+                padding-left: 25px;
+                font-size: 14px;
+                line-height: 16px;
+                color: #333333;
+                font-weight: 300;
+                white-space: pre-line;
+                @media(max-width: 700px){
+                    padding: 0;
+                }                 
+                &:last-child {
+                    color: #999;
+                    padding: 0;
+                    margin-left: 5px;
+                    @media(max-width: 500px){
+                        text-align: center;
+                    }                      
+                }
+            }
+		}
+}

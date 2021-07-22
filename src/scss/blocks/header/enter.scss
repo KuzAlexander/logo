@@ -1,0 +1,73 @@
+.enter {
+
+      &__item {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            position: relative;
+            margin-right: 50px;
+            &:last-child{
+                  margin-right: 32px;
+            }            
+            &:first-child {
+                  margin-left: 24px;
+            }
+            svg {
+                  width: 23px;
+                  height: 23px;
+                  fill: #e5e5e5;
+                  margin-right: 12px;
+                  transition: all 0.5s ease 0s;
+            }
+            p {
+                  font-size: 14px;
+                  line-height: 18px;
+                  font-weight: 300;
+                  color: black;
+                  // color: #e5e5e5;
+                  border-bottom: 1px dashed #e5e5e5;
+                  transition: all 0.5s ease 0s;                             
+            }
+            &:hover {
+                  svg {
+                        &:not(:last-child){
+                              fill: #19b9cd;
+                        }
+                  }                  
+                  p {
+                        color: #19b9cd;
+                        border-bottom-color: #19b9cd;
+                  }  
+            }
+      }
+      &__hour {
+            p {
+                  border-bottom: none;
+            }
+      } 
+      &__disc {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #19b9cd;
+            position: relative;
+            svg {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  fill: $white;
+            }
+      } 
+      &__count {
+            position: absolute;
+            top: 0;
+            left: 32px;
+            background-color: #f68038;
+            border-radius: 15px;
+            padding: 5px 10px;
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: 700;
+      }          
+}

@@ -1,0 +1,75 @@
+.info {
+
+		&__text {
+            position: relative;
+            background-color: #009cb0;
+            padding: 40px 35px 60px;
+		}
+
+		&__title {
+            font-size: 30px;
+            letter-spacing: 1px;
+            color: #22b7ca;
+            text-transform: uppercase;
+            font-family: "UniSans";
+		}
+
+		&__row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+		}
+
+		&__column {
+            flex: 0 1 50%;
+            color: $white;
+            font-size: 12px;
+            letter-spacing: 0px;
+            line-height: 20px;
+            font-weight: 400;
+            margin-right: 50px;
+            &:last-child {
+                margin: 0;
+            }            
+            p {
+                margin-bottom: 20px;
+                color: $white;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+		}
+
+		&__subtitle {
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 0px;
+            line-height: 20px;
+            color: $white;
+            font-weight: 900;
+		}
+
+		&__list {
+            margin-top: 10px;
+            li {
+                margin-bottom: 7px;
+                &::before {
+                    content: '';
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    margin: 0 18px 0 7px;
+                    background: url(../images/sidebar-arrow.png) left 1px no-repeat;
+                }
+            }
+		}
+        &__img {
+            position: absolute;
+            bottom: -127px;
+            right: 0px;
+            width: 290px;
+            img {
+                width: 100%;
+            }
+        }
+}

@@ -1,0 +1,25 @@
+.menu {
+		&__list {
+            display: flex;
+            justify-content: flex-start;
+		}
+
+		&__link {
+            display: inline-block;
+            padding: 10px 24px;
+            border-radius: 15px;            
+            text-decoration: underline;
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: 700;
+            font-family: "Play";
+            transition: all 0.5s ease 0s;
+            &:first-child{
+                margin-bottom: 1px;
+            }
+            &:hover {
+                background-color: #068292;
+
+            }            
+		}
+}

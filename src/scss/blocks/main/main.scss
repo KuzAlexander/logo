@@ -1,0 +1,73 @@
+@import "sidebar/sidebar";
+@import "sidebar/menu-sidebar";
+@import "sidebar/cart-sidebar";
+@import "sidebar/item";
+@import "sidebar/hover";
+@import "sidebar/news";
+@import "sidebar/reviews";
+@import "sidebar/filter";
+@import "sidebar/price";
+@import "sidebar/contrast";
+@import "sidebar/checkbox";
+
+@import "products/products";
+@import "products/slider";
+@import "products/block-products";
+@import "products/item-product";
+@import "products/breadcrumbs";
+@import "products/sorting";
+@import "products/pagging";
+@import "products/search";
+@import "products/card";
+@import "products/description";
+@import "products/counter";
+@import "products/info-card";
+@import "products/other-products";
+@import "products/checkout";
+@import "products/checkout-card";
+@import "products/item-checkout";
+@import "brands";
+@import "info";
+@import "info-menu";
+@import "media";
+
+
+
+.main {
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+    &__sidebar {
+        flex-basis: 24%;
+        flex-shrink: 0;
+    }
+    &__sidebar--catalog {
+        flex: 0 0 260px;
+        margin-right: 25px;
+        @media(max-width: 992px){
+            margin: 0;
+        }
+    }
+    &__products {
+        position: relative;
+        width: 74%;
+    }
+    &__catalog {
+        position: relative;
+        flex: 0 1 auto;
+    }
+
+    &__brands {
+        margin-top: 45px;
+    }
+    &__info {
+        margin-top: 35px;
+    }
+    &__info-menu {
+        margin-top: 35px;
+    }
+
+}

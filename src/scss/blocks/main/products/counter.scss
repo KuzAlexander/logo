@@ -1,0 +1,35 @@
+.counter {
+    display: flex;
+    align-items: center;
+    .icon-arrow-left, .icon-arrow-right {
+        font-size: 17px;
+        font-weight: 600;
+        color: #e5e5e5;
+        &:hover {
+                color: #fd8323;
+        }
+    }
+    &__input {
+
+            display: block;
+            margin: 0 12px;
+            max-width: 52px;
+            padding: 5px;
+            border: 1px solid #e5e5e5;
+            text-align: center;
+            font-size: 16px;
+            color: #999999;
+            font-weight: 900;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none; 
+            }
+
+            &,
+            &:hover,
+            &:focus {
+            appearance: none;
+                -moz-appearance: textfield;
+            }
+    }    
+}

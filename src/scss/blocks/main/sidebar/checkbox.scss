@@ -1,0 +1,52 @@
+.checkbox {
+    display: none;
+    &--last {
+        display: block;
+    }
+    &--check {
+        display: block;
+    }
+    &__item {
+        input {
+            display: none;
+        }
+        margin-bottom: 15px;
+        &:last-child {
+            margin: 0;
+        }
+        font-size: 12px;
+        line-height: 20px;
+        color: #666666;
+        font-weight: 300;
+        padding: 0 0 0 28px;
+        position: relative;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        &::before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            border: 2px solid #dadada;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        &::after {
+            content: '';
+            width: 7px;
+            height: 7px;
+            position: absolute;
+            left: 6px;
+            top: 6px;
+            background-color: $white;
+        }
+        &.active {
+            &::before {
+                border-color: #1ab9ce;
+            }
+            &::after {
+                background-color: #53b5de;
+            }
+        }        
+    }
+}

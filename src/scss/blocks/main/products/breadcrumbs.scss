@@ -1,0 +1,36 @@
+.breadcrumbs {
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    height: 20px;
+		&__list {
+            display: flex;
+            align-items: center;
+            li {
+                &:first-child {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                }
+                .icon-arrow {
+                    display: inline-block;
+                    color: #1ab9ce;
+                    margin: 1px 20px 0;
+                }
+            }
+		}
+
+		&__link {
+            font-size: 14px;
+            color: #1ab9ce;
+            font-weight: 300;         
+		}
+
+		&__item {
+            font-size: 14px;
+            color: #999999;
+            font-weight: 300;   
+            text-decoration: none;  
+            white-space: nowrap;  
+		}
+}

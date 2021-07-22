@@ -1,0 +1,106 @@
+.hover {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    border: 5px solid #f57f38;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 10px 20px 20px;
+    transition: all 0.5s ease 0s;
+		&__title {
+            a {
+                font-size: 16px;
+                line-height: 22px;
+                color: #9c9c9c;
+                text-decoration: none;
+                span {
+                    display: block;
+                    color: #ffffff;
+                    font-weight: 900;
+                }                  
+            }
+        
+		}
+
+		&__info {
+            flex: 1 1 auto;
+            margin-top: 30px;
+            > p {
+                margin-bottom: 5px;
+                font-size: 14px;
+                line-height: 18px;
+                color: #ffffff;
+                font-weight: 400;
+            }
+            span {
+                display: block;
+                color: #f68038;
+            }
+		}
+            &__compare {
+                  display: block;
+                  background: url(../images/contrast.png) left center no-repeat;
+                  margin-top: 20px;
+                  padding: 5px 5px 5px 32px;
+                  p {
+                        display: inline-block;
+                        font-size: 14px;
+                        color: #ffffff;
+                        font-weight: 300;
+                        border-bottom: 1px dashed #fff;
+                  }
+            }
+		&__disc {
+            margin: 0 auto;
+            width: 55px;
+            height: 55px;
+            background-color: #fd8424;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;   
+            &--catalog {
+                  margin: 0;
+            }         
+		}
+
+		&__basket {
+            width: 28px;
+            height: 28px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            fill: $white;              
+		}
+
+		&__price-old {
+            margin-top: 20px;
+            text-align: end;
+            font-size: 18px;
+            text-decoration: line-through;
+            color: #999999; 
+            &--catalog {
+                  margin: 0 0 10px 0;
+            }           
+		}
+
+		&__wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 8px;
+		}
+
+		&__text {
+            background-color: $white;
+            padding: 8px;
+            border-radius: 15px;
+            font-size: 14px;
+            color: #f68038;
+		}
+		&__price {
+            font-size: 24px;
+            color: $white;
+            font-weight: 900;            
+		}
+}

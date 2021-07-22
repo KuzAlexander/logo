@@ -1,0 +1,59 @@
+.checkout {
+		&__title {
+            font-size: 36px;
+            color: #dadada;
+            font-family: "UniSans";
+            text-transform: uppercase;
+		}
+
+		&__info {
+            margin-top: 20px;
+		}
+
+ 		&__order {
+            margin-top: 30px;
+            &:last-child {
+                margin-top: 50px;
+            }
+		}
+
+		&__item {
+            margin-top: 30px;
+            &:last-child {
+                margin-top: 10px;
+            }
+		} 
+
+        &__total {
+            margin-top: 30px;
+            text-align: end;
+            font-size: 24px;
+            color: #333333;
+            font-weight: 900;
+            span {
+                font-size: 36px;
+                color: #f68038;
+                font-weight: 900;
+            }
+        } 
+        &__btn {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 25px;
+            
+            button {
+                padding: 12px 17px;
+                border: none;
+                border-radius: 20px;
+                font-size: 14px;
+                text-transform: uppercase;
+                color: #ffffff;
+                font-weight: 900;
+                background-color: #f68038; 
+                cursor: pointer;               
+            }
+        }     
+}
+
+
+

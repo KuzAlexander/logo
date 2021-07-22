@@ -1,0 +1,133 @@
+.checkout-card {
+    padding: 20px;
+    background-color: #fafafa;
+    @media(max-width: 800px){
+        padding: 20px 0;
+    }
+		&__title {
+            display: flex;
+            @media(max-width: 800px){
+                justify-content: space-between;
+            }            
+            @media(max-width: 700px){
+                flex-direction: column;
+            }            
+		}
+
+		&__button {
+            align-self: center;
+            display: block;
+            padding: 12px 30px; 
+            text-decoration: none; 
+            @media(max-width: 450px){
+                padding: 12px 20px;
+            }                          
+            p {
+                font-size: 14px;
+                line-height: 25px;
+                color: #72c9d4;
+                font-weight: 900;
+                text-transform: uppercase;
+                border-bottom: 1px dashed #72c9d4;
+            }            
+		}
+
+        &__active {
+            background-color: #72c9d4;
+            p {
+                color: #fff;
+                padding: 0;
+                border: none;
+            }     
+        }
+
+		&__body {
+            padding: 25px 30px 15px 25px;
+            @media(max-width: 500px){
+                padding: 25px 15px 15px 15px;
+            }                
+		}
+
+		&__description {
+            display: none;
+            &.active {
+                display: flex;
+                @media(max-width: 700px){
+                    display: block;
+                }                 
+            }
+		}
+
+		&__form {
+            flex: 1 0 380px;
+            margin-right: 45px;
+            @media(max-width: 700px){
+                margin: 0;
+            }                
+		}
+
+		&__label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            @media(max-width: 700px){
+                margin-bottom: 15px;
+            }              
+            &:last-child {
+                margin: 0;
+            }
+            label {
+                font-size: 14px;
+                line-height: 18px;
+                color: #333333;
+                font-weight: 900;
+                @media(max-width: 700px){
+                    flex: 0 0 120px;
+                }                    
+                span {
+                    color: #f68038;
+                }
+            }
+            input {
+                flex: 0 1 217px;
+                min-width: 20px;
+                height: 30px;
+                border:1px solid #e5e5e5;
+                @media(max-width: 700px){
+                    flex: 1 1 auto;
+                }                  
+            }
+		}
+
+		&__checkbox {
+            max-width: 217px;
+            margin: 25px 0 0 auto;
+            
+		}
+
+		&__text {
+            flex: 1 1 auto;
+            @media(max-width: 700px){
+                margin-top: 20px;
+            }                
+            p {
+                font-size: 12px;
+                line-height: 18px;
+                color: #666;
+                font-weight: 300;
+                margin-bottom: 25px;
+                &:first-child {
+                    margin-bottom: 40px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            span {
+                color: #f68038;
+                font-weight: 900;
+            }
+		}
+       
+}

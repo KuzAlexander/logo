@@ -1,0 +1,32 @@
+.block-products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__item {
+        flex: 0 1 33.333%;
+        padding: 15px;
+        @media (max-width: 800px) {
+            flex-basis: 50%;
+        }  
+        @media (max-width: 500px) {
+            flex-basis: 100%;
+        }                
+        &:hover {
+            .item {
+                &__hover {
+                    opacity: 1;
+                    visibility: visible;
+                }
+                &__info {
+                    opacity: 0;
+                }
+                &__price-old {
+                    opacity: 0;
+                }
+                &__wrap {
+                    opacity: 0;
+                }
+            }    
+        }
+    }
+}

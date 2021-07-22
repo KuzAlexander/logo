@@ -1,0 +1,34 @@
+.phone {
+    display: flex;
+    justify-content: flex-end;
+		&__item {
+            display: flex;
+            align-items: center;
+            &:first-child {
+                border-right: 1px solid #ffffff; 
+                padding-right: 30px;
+            }
+            &:last-child {
+                padding-left: 30px;
+            }
+		}
+        &__img {
+            width: 20px;
+            height: 25px;
+            fill: $white;
+            margin-right: 17px;
+        }
+		&__text {
+            color: #ffffff;
+            font-weight: 300;
+            margin-bottom: 7px;
+		}
+
+		&__number {
+            text-decoration: none;
+            font-size: 18px;
+            color: #ffffff;
+            font-weight: 900;
+		}
+
+}

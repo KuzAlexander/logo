@@ -1,0 +1,55 @@
+@import "logo";
+@import "menu";
+@import "phone";
+@import "enter";
+@import "media";
+
+.header {
+    background: $white url(../images/header-bg.png) top no-repeat;
+		&__wrap {
+            padding: 7px 15px 0;
+		}
+
+		&__top {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+		}
+        
+        &__burger {
+            display: none;
+		}
+
+		&__menu {
+            flex-basis: 50%;
+		}
+
+		&__logo {
+            margin-top: 18px;
+            flex-shrink: 0;
+            width: 140px;
+            text-align: center;
+		}
+
+		&__phone {
+            flex-basis: 50%;
+		}
+
+		&__bottom {
+                  display: flex;
+                  justify-content: space-between;
+                  padding: 10px 0px;
+		}
+
+		&__left {
+                  display: flex;
+		}
+
+		&__right {
+                  display: flex;
+                  justify-content: flex-end;
+		}
+}
+
+
+

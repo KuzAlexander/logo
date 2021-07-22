@@ -1,0 +1,19 @@
+.other-products {
+		&__title {
+            margin-bottom: 15px;
+            font-size: 36px;
+            color: #333333;
+            font-weight: 900;
+            text-transform: uppercase;
+            color: #dadada;
+		}
+		&__block {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            @media (max-width: 500px) {
+                justify-content: center;
+            }
+		}          
+}

@@ -119,7 +119,7 @@ $(function(){
                 let image = clone.querySelector(`.slider__bg img`)              
                 let imageAdres = image.getAttribute('src')
                 let dot = dots[i]
-                dot.style.backgroundImage = `url(../${imageAdres})` 
+                dot.style.backgroundImage = `url(${imageAdres})` 
                 i++                
             }
         }         
